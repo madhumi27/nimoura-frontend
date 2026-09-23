@@ -1,0 +1,5 @@
+.ticker { background:var(--brown); padding:11px 0; overflow:hidden; white-space:nowrap; }
+.ticker-inner { display:inline-flex; gap:64px; animation:tick 22s linear infinite; }
+.ticker-inner span { font-size:10px; letter-spacing:3px; text-transform:uppercase; color:var(--gold); }
+.ticker-inner span::before { content:'✦'; margin-right:32px; opacity:0.4; }
+@keyframes tick { from{transform:translateX(0)} to{transform:translateX(-50%)} }

@@ -1,0 +1,10 @@
+.categories { padding:72px 48px; background:var(--cream-light); }
+.section-head { text-align:center; margin-bottom:48px; }
+.cat-grid { display:grid; grid-template-columns:repeat(4,1fr); gap:16px; }
+.cat-card { position:relative; overflow:hidden; cursor:pointer; }
+.cat-card img { width:100%; aspect-ratio:3/4; object-fit:cover; transition:transform 0.6s ease; }
+.cat-card:hover img { transform:scale(1.05); }
+.cat-overlay { position:absolute; bottom:0; left:0; right:0; padding:20px 16px; background:linear-gradient(transparent,rgba(30,22,14,0.75)); }
+.cat-name { font-family:var(--font-serif); font-size:20px; font-weight:300; color:#fdf9f6; letter-spacing:2px; }
+.cat-cta { font-size:10px; color:var(--gold); letter-spacing:2px; margin-top:4px; text-transform:uppercase; }
+@media(max-width:768px) { .cat-grid { grid-template-columns:repeat(2,1fr); } .categories { padding:48px 20px; } }

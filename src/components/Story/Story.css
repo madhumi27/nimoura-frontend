@@ -1,0 +1,8 @@
+.story { display:grid; grid-template-columns:1fr 1fr; }
+.story-img { overflow:hidden; }
+.story-img img { width:100%; height:100%; object-fit:cover; }
+.story-text { background:var(--cream-mid); display:flex; flex-direction:column; justify-content:center; padding:72px 56px; }
+.story-title { font-family:var(--font-serif); font-size:44px; font-weight:300; line-height:1.1; color:var(--brown-dark); margin-bottom:20px; }
+.story-title em { font-style:italic; color:var(--gold); }
+.story-desc { font-size:13px; color:#8a7265; line-height:1.9; margin-bottom:32px; font-weight:300; }
+@media(max-width:768px) { .story { grid-template-columns:1fr; } .story-text { padding:40px 24px; } .story-title { font-size:32px; } }

@@ -1,0 +1,12 @@
+.about-hero { display:grid; grid-template-columns:1fr 1fr; min-height:70vh; align-items:center; }
+.about-text { padding:72px 56px; }
+.about-title { font-family:var(--font-serif); font-size:52px; font-weight:300; line-height:1.1; color:var(--brown-dark); margin-bottom:20px; }
+.about-title em { font-style:italic; color:var(--gold); }
+.about-desc { font-size:14px; color:var(--brown-muted); line-height:1.9; font-weight:300; max-width:400px; }
+.about-img img { width:100%; height:100%; object-fit:cover; min-height:70vh; }
+.about-values { display:grid; grid-template-columns:repeat(3,1fr); border-top:1px solid var(--border); }
+.value-card { padding:48px 40px; border-right:1px solid var(--border); }
+.value-card:last-child { border-right:none; }
+.value-card h3 { font-family:var(--font-serif); font-size:26px; font-weight:300; color:var(--brown-dark); margin-bottom:12px; }
+.value-card p { font-size:13px; color:var(--brown-muted); line-height:1.9; font-weight:300; }
+@media(max-width:768px) { .about-hero { grid-template-columns:1fr; } .about-text { padding:40px 20px; } .about-title { font-size:36px; } .about-values { grid-template-columns:1fr; } .value-card { border-right:none; border-bottom:1px solid var(--border); } }

@@ -1,0 +1,11 @@
+.care-hero { text-align:center; padding:80px 48px 56px; background:var(--cream-light); border-bottom:1px solid var(--border); }
+.care-title { font-family:var(--font-serif); font-size:48px; font-weight:300; color:var(--brown-dark); margin-bottom:12px; }
+.care-title em { font-style:italic; color:var(--gold); }
+.care-sub { font-size:13px; color:var(--brown-muted); font-weight:300; }
+.care-grid { display:grid; grid-template-columns:repeat(3,1fr); }
+.care-card { padding:48px 40px; border-right:1px solid var(--border); border-bottom:1px solid var(--border); }
+.care-card:nth-child(3n) { border-right:none; }
+.care-card i { font-size:24px; color:var(--gold); display:block; margin-bottom:16px; }
+.care-card h3 { font-family:var(--font-serif); font-size:22px; font-weight:300; color:var(--brown-dark); margin-bottom:10px; }
+.care-card p { font-size:13px; color:var(--brown-muted); line-height:1.9; font-weight:300; }
+@media(max-width:768px) { .care-grid { grid-template-columns:1fr; } .care-card { border-right:none; } .care-hero { padding:48px 20px 32px; } .care-title { font-size:36px; } }

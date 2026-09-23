@@ -1,0 +1,16 @@
+.home-products { padding:72px 48px; }
+.hp-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:24px; }
+.hp-card { cursor:pointer; }
+.hp-img { position:relative; overflow:hidden; background:var(--cream-mid); margin-bottom:14px; }
+.hp-img img { width:100%; aspect-ratio:4/5; object-fit:cover; transition:transform 0.5s; }
+.hp-card:hover .hp-img img { transform:scale(1.05); }
+.hp-badge { position:absolute; top:12px; left:12px; background:var(--cream-light); font-size:9px; letter-spacing:2px; text-transform:uppercase; padding:4px 10px; color:var(--brown-mid); }
+.hp-add { position:absolute; bottom:0; left:0; right:0; background:var(--brown); color:var(--cream-light); font-size:10px; letter-spacing:2px; text-transform:uppercase; padding:12px; border:none; transform:translateY(100%); transition:transform 0.3s; }
+.hp-card:hover .hp-add { transform:translateY(0); }
+.hp-cat { font-size:10px; letter-spacing:2px; text-transform:uppercase; color:var(--brown-light); margin-bottom:4px; }
+.hp-name { font-family:var(--font-serif); font-size:17px; font-weight:300; color:var(--brown-dark); margin-bottom:6px; }
+.hp-price { font-size:13px; }
+.hp-price del { color:#c4b4a4; margin-right:6px; font-weight:300; }
+.hp-price span { color:var(--gold); }
+.hp-cta { text-align:center; margin-top:48px; }
+@media(max-width:768px) { .hp-grid { grid-template-columns:repeat(2,1fr); } .home-products { padding:48px 20px; } }

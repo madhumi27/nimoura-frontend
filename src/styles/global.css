@@ -1,0 +1,19 @@
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+:root {
+  --cream: #faf7f4; --cream-light: #fdf9f6; --cream-mid: #f0e8e0;
+  --brown-dark: #1e160e; --brown: #2c2118; --brown-mid: #7a5c44;
+  --brown-muted: #9c8472; --brown-light: #b0968a; --gold: #c4956a;
+  --border: #ede5dc; --font-serif: 'Cormorant Garamond', serif; --font-sans: 'DM Sans', sans-serif;
+}
+html { scroll-behavior: smooth; }
+body { font-family: var(--font-sans); background: var(--cream); color: var(--brown); overflow-x: hidden; }
+a { text-decoration: none; color: inherit; }
+button { cursor: pointer; font-family: var(--font-sans); }
+img { display: block; max-width: 100%; }
+.eyebrow { font-size: 10px; letter-spacing: 4px; text-transform: uppercase; color: var(--gold); margin-bottom: 12px; }
+.section-title { font-family: var(--font-serif); font-size: 38px; font-weight: 300; color: var(--brown-dark); }
+.section-title em { font-style: italic; }
+.btn-dark { background: var(--brown); color: var(--cream-light); font-size: 10px; letter-spacing: 3px; text-transform: uppercase; padding: 13px 32px; border: none; transition: background 0.2s; }
+.btn-dark:hover { background: var(--brown-dark); }
+.btn-light { background: transparent; color: var(--brown); font-size: 10px; letter-spacing: 3px; text-transform: uppercase; padding: 13px 32px; border: 1px solid #c4b4a4; transition: background 0.2s; }
+.btn-light:hover { background: var(--cream-mid); }
