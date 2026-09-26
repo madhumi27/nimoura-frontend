@@ -278,7 +278,7 @@ const AdminPage = () => {
                 )}
                 {form.imageUrl && (
                   <div className="img-preview-wrap">
-                    <img src={form.imageUrl.startsWith('/uploads/') ? `http://localhost:8080${form.imageUrl}` : form.imageUrl} alt="preview" className="img-preview" />
+<img src={getImageUrl(form.imageUrl)} alt="preview" className="img-preview" />
                     <button className="img-remove" onClick={() => setForm(f => ({ ...f, imageUrl: '' }))} type="button">✕</button>
                   </div>
                 )}
@@ -305,7 +305,7 @@ const AdminPage = () => {
               products.map(p => (
                 <div className="admin-prod-row" key={p.id}>
                   <img
-                    src={p.imageUrl?.startsWith('/uploads/') ? `http://localhost:8080${p.imageUrl}` : p.imageUrl}
+                  src={getImageUrl(p.imageUrl)}
                     alt={p.name}
                     onError={e => e.target.style.display = 'none'}
                   />
@@ -388,7 +388,7 @@ const AdminPage = () => {
                       {order.items?.map(item => (
                         <div className="aoc-item" key={item.id}>
                           <img
-                            src={item.product?.imageUrl?.startsWith('/uploads/') ? `http://localhost:8080${item.product.imageUrl}` : item.product?.imageUrl}
+src={getImageUrl(item.product?.imageUrl)}
                             alt={item.product?.name}
                             onError={e => e.target.style.display = 'none'}
                           />

@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { useAuth } from '../../context/AuthContext';
 import { useCart } from '../../context/CartContext';
 import { getAllProducts } from '../../services/api';
+import { getImageUrl } from '../../utils/imageHelper';
 import './HomeProducts.css';
 
 const HomeProducts = () => {
@@ -56,9 +57,7 @@ const HomeProducts = () => {
             <div className="hp-card" key={p.id}>
               <div className="hp-img" onClick={() => navigate(`/product/${p.id}`)}>
                 <img 
-  src={p.imageUrl?.startsWith('/uploads/') 
-    ? `http://localhost:8080${p.imageUrl}` 
-    : p.imageUrl} 
+  src={getImageUrl(p.imageUrl)} 
   alt={p.name} 
 />
                 {p.badge && <span className="hp-badge">{p.badge}</span>}
